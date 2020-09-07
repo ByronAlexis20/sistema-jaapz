@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="sistema-jaapz" transaction-type="RESOURCE_LOCAL">
+		<class>ec.com.jaapz.modelo.Anio</class>
+		<class>ec.com.jaapz.modelo.AperturaLectura</class>
+		<class>ec.com.jaapz.modelo.Barrio</class>
+		<class>ec.com.jaapz.modelo.Categoria</class>
+		<class>ec.com.jaapz.modelo.Cliente</class>
+		<class>ec.com.jaapz.modelo.Convenio</class>
+		<class>ec.com.jaapz.modelo.ConvenioDetalle</class>
+		<class>ec.com.jaapz.modelo.ConvenioPlanilla</class>
+		<class>ec.com.jaapz.modelo.Corte</class>
+		<class>ec.com.jaapz.modelo.CuentaCliente</class>
+		<class>ec.com.jaapz.modelo.Empresa</class>
+		<class>ec.com.jaapz.modelo.EstadoMedidor</class>
+		<class>ec.com.jaapz.modelo.Factura</class>
+		<class>ec.com.jaapz.modelo.FacturaDetalle</class>
+		<class>ec.com.jaapz.modelo.Ingreso</class>
+		<class>ec.com.jaapz.modelo.IngresoDetalle</class>
+		<class>ec.com.jaapz.modelo.Instalacion</class>
+		<class>ec.com.jaapz.modelo.InstalacionDetalle</class>
+		<class>ec.com.jaapz.modelo.LiquidacionDetalle</class>
+		<class>ec.com.jaapz.modelo.LiquidacionOrden</class>
+		<class>ec.com.jaapz.modelo.Medidor</class>
+		<class>ec.com.jaapz.modelo.Me</class>
+		<class>ec.com.jaapz.modelo.Pago</class>
+		<class>ec.com.jaapz.modelo.Planilla</class>
+		<class>ec.com.jaapz.modelo.PlanillaDetalle</class>
+		<class>ec.com.jaapz.modelo.PrecioUnitario</class>
+		<class>ec.com.jaapz.modelo.Reconexion</class>
+		<class>ec.com.jaapz.modelo.RegistroFoto</class>
+		<class>ec.com.jaapz.modelo.Reparacion</class>
+		<class>ec.com.jaapz.modelo.ReparacionDetalle</class>
+		<class>ec.com.jaapz.modelo.ResponsableLectura</class>
+		<class>ec.com.jaapz.modelo.Rubro</class>
+		<class>ec.com.jaapz.modelo.SegAuditoria</class>
+		<class>ec.com.jaapz.modelo.SegMenu</class>
+		<class>ec.com.jaapz.modelo.SegPerfil</class>
+		<class>ec.com.jaapz.modelo.SegPermiso</class>
+		<class>ec.com.jaapz.modelo.SegUsuario</class>
+		<class>ec.com.jaapz.modelo.SegUsuarioPerfil</class>
+		<class>ec.com.jaapz.modelo.SolInspeccionIn</class>
+		<class>ec.com.jaapz.modelo.SolInspeccionRep</class>
+		<class>ec.com.jaapz.modelo.TipoPago</class>
+		<class>ec.com.jaapz.modelo.TipoRubro</class>
+		<class>ec.com.jaapz.modelo.TipoSolicitud</class>
+		<class>ec.com.jaapz.modelo.Kardex</class>
+		<class>ec.com.jaapz.modelo.Proveedor</class>
+		<class>ec.com.jaapz.modelo.Egreso</class>
+		<class>ec.com.jaapz.modelo.MaterialAdicional</class>
+		<class>ec.com.jaapz.modelo.MaterialAdicionalDetalle</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/bd_jaapz"/>
+			<property name="javax.persistence.jdbc.user" value="postgres"/>
+			<property name="javax.persistence.jdbc.password" value="tricampeon2015"/>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+		</properties>
+	</persistence-unit>
+</persistence>

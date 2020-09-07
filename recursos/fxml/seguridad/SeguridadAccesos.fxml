@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="/estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.com.jaapz.controlador.SeguridadAccesosC">
+   <children>
+      <GridPane alignment="TOP_CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="58.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="448.0" minHeight="10.0" prefHeight="448.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ACCESOS" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Label>
+            <HBox GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+               <children>
+                  <GridPane HBox.hgrow="ALWAYS">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="25.0" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="100.0" prefWidth="135.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="100.0" prefWidth="158.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="70.0" prefWidth="82.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="100.0" prefWidth="130.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="50.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="100.0" prefWidth="135.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="25.0" prefWidth="25.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="57.0" minHeight="57.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="81.0" minHeight="11.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="359.0" minHeight="200.0" prefHeight="357.0" vgrow="ALWAYS" />
+                    </rowConstraints>
+                     <children>
+                        <ComboBox fx:id="cboPerfil" onAction="#cargarAccesos" prefHeight="25.0" prefWidth="214.0" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                        <Label text="SELECCIONAR PERFIL:" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnGuardar" alignment="BOTTOM_CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="0.0" maxHeight="95.0" minHeight="50.0" mnemonicParsing="false" onAction="#grabar" prefHeight="57.0" prefWidth="63.0" styleClass="botonGrabar" text="Guardar" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                           <children>
+                              <Button fx:id="btnAnadir" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#anadir" prefHeight="67.0" prefWidth="64.0" styleClass="botonAnadir" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnAgregarTodo" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#agregarTodo" prefHeight="67.0" prefWidth="64.0" styleClass="botonAnadirTodo" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="btnQuitar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#quitar" prefHeight="67.0" prefWidth="64.0" styleClass="botonQuitar" VBox.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="btnEliminarTodo" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" mnemonicParsing="false" onAction="#eliminarTodo" prefHeight="67.0" prefWidth="64.0" styleClass="botonQuitarTodo" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="15.0" prefWidth="183.0" text="OPCIONES ASIGNADAS" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="15.0" prefWidth="183.0" text="OPCIONES DISPONIBLES" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="561.0" prefWidth="343.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+                           <children>
+                              <TableView fx:id="tvMenu" prefHeight="549.0" prefWidth="343.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="599.0" prefWidth="315.0" GridPane.columnIndex="5" GridPane.columnSpan="3" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.vgrow="ALWAYS">
+                           <children>
+                              <TableView fx:id="tvPermiso" prefHeight="534.0" prefWidth="315.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

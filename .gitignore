@@ -1,0 +1,9 @@
+#ignorar los directorios siguientes
+bin/
+.settings/
+.metadata/
+app_movil/
+.classpath
+.project
+build.fxbuild
+

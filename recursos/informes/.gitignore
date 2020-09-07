@@ -1,0 +1,52 @@
+/lista_materiales_disponibles.jasper
+/ComprobantePago.jasper
+/prueba.jasper
+/abc.jasper
+/planilla_consumo.jasper
+/listado_materiales.jasper
+/comprobante.jasper
+/ver_recaudaciones.jasper
+<<<<<<< HEAD
+/deuda_por_cliente.jasper
+/deuda_general.jasper
+=======
+/ficha_inspeccion.jasper
+/lista_precios_unitarios.jasper
+>>>>>>> 786f70181a6232b81c29f63c719c3487f58efc1a
+<<<<<<< HEAD
+/clientes_al_dia.jasper
+/clientes_orden_corte.jasper
+=======
+/consolidadoConsumo.jasper
+>>>>>>> 286f0d684ffc44298eced271dbc2f8da62ff8300
+/nominaSimple.jasper
+/nominaFirma.jasper
+/historialUsuario.jasper
+/historialUsuarioPagos.jasper
+/historialUsuarioDetalle.jasper
+/materiales_agotados.jasper
+/convenio.jasper
+/inconsistenciaDetalle.jasper
+/inconsistenciaMarcaciones.jasper
+/reporteSolicitudInstalacion.jasper
+/reporteSolicitudes.jasper
+/reporteCajaDetallado.jasper
+/reporteCajaResumido.jasper
+/clientesCortados.jasper
+/cajaResumido.jasper
+/reporteLecturas.jasper
+/materiales_reparacion.jasper
+/ficha_inspeccion_reparacion.jasper
+/ficha_instalacion.jasper
+/ficha_reparacion.jasper
+/reporteCajaResumidoPorUsuario.jasper
+/reporteCajaDetalladoPorUsuario.jasper
+/deudaClienteDetalle.jasper
+/VerOrdLiquidacion.jasper
+/deudaPorCliente.jasper
+/lista_cliente.jasper
+/listadoClientesConvenio.jasper
+/listadoInstalacionRealizadas.jasper
+/listadoReparacionRealizadas.jasper
+/listadoSolicitudesPendientes.jasper
+/solicitudesNoFactibles.jasper

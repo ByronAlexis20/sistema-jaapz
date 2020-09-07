@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="316.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.com.jaapz.controlador.RecaudacionesDeudaGeneralC">
+   <children>
+      <GridPane alignment="CENTER" layoutX="34.0" layoutY="72.0" prefHeight="330.0" prefWidth="770.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER">
+               <children>
+                  <Label text="Fecha Inicio:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dtpFechaInicio" />
+                  <Label text="Fecha Fin:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="dtpFechaFin" />
+                  <Button fx:id="btnCargarDatos" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#cargarDatos" prefHeight="55.0" prefWidth="85.0" styleClass="botonCargar" text="Ver Informe">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" top="5.0" />
+               </GridPane.margin>
+            </HBox>
+            <TableView fx:id="tvDatos" prefHeight="200.0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </TableView>
+            <TextField fx:id="txtTotalDeuda" maxHeight="25.0" maxWidth="175.0" prefHeight="27.0" prefWidth="175.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="TOTAL ADEUDADO:" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <children>
+                  <Button fx:id="btnReporte" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#verReporte" prefHeight="53.0" prefWidth="79.0" styleClass="botonImprimir" text="Imprimir">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </VBox>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="658.0" minWidth="10.0" prefWidth="290.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="464.0" minWidth="10.0" prefWidth="404.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="464.0" minWidth="10.0" prefWidth="90.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="512.0" minHeight="10.0" prefHeight="69.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="512.0" minHeight="0.0" prefHeight="26.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="433.0" minHeight="111.0" prefHeight="150.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="544.0" minHeight="0.0" prefHeight="21.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="544.0" minHeight="10.0" prefHeight="50.0" vgrow="NEVER" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

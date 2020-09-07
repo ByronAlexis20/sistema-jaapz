@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPrincipal" minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="595.0" styleClass="root" stylesheets="/estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.com.jaapz.controlador.PrincipalC">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="120.0" minHeight="10.0" prefHeight="76.0" prefWidth="595.0" styleClass="fondbox">
+					<children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <children>
+      						<Label styleClass="labelBanner" text="JUNTA ADMINISTRADORA DE AGUA POTABLE ZAPOTAL - JAAPZ" textFill="WHITE">
+      							<effect>
+      								<Bloom />
+      							</effect>
+      						</Label>
+                        <Label styleClass="labelBanner2" text="SISTEMA DE CONTROL ADMINISTRATIVO Y FINANCIERO" textFill="WHITE">
+                           <effect>
+                              <Bloom />
+                           </effect>
+                           <VBox.margin>
+                              <Insets top="2.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <ImageView fx:id="ivLogo" fitHeight="77.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS" />
+					</children>
+				</HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <SplitPane fx:id="sp_contenedor" dividerPositions="0.29797979797979796" minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="600.0" styleClass="root" HBox.hgrow="ALWAYS">
+                     <items>
+                        <AnchorPane fx:id="ap_izquierda" minHeight="0.0" minWidth="0.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="TOP" layoutX="52.0" layoutY="14.0" styleClass="labels3" text="MENÚ DE OPCIONES" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font></Label>
+                              <AnchorPane layoutX="-26.0" layoutY="51.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                                 <children>
+                                    <VBox fx:id="vBoxMenu" layoutX="11.0" layoutY="4.0" maxWidth="1.7976931348623157E308" prefHeight="183.0" prefWidth="163.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="ap_derecha" minHeight="0.0" minWidth="0.0" />
+                     </items>
+                  </SplitPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="559.0">
+               <children>
+                  <ToolBar prefHeight="25.0" prefWidth="600.0" styleClass="fondbox" HBox.hgrow="ALWAYS">
+                     <items>
+                        <Label text="Perfil:" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblPerfil" text="Label" textFill="WHITE" />
+                        <Label text="Usuario:" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblUsuario" text="Label" textFill="WHITE" />
+                        <Label text="Fecha:" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblFecha" text="Label" textFill="WHITE" />
+                     </items>
+                  </ToolBar>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

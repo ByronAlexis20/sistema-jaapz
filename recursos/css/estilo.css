@@ -1,0 +1,265 @@
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Estilos para ventana contenedoras */
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.ventanaContenedor{
+	-fx-background-color: rgba(255, 255, 255, 0.2);
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Estilis de botones para el diseño del menu slidding javafx*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */ 
+.botonMenuPadre{
+	/*-fx-background-color: rgba(0, 0, 0, 0.4);*/
+	-fx-background-color: #e1e1e1;
+	-fx-background-insets: 0 0 -1 0,0,1;
+	-fx-cursor: hand;
+    -fx-background-radius: 0,0,0;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER-LEFT;
+    -fx-font-weight: bold;
+}
+.botonMenuPadre:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+.botonMenuPadre:pressed, .botonMenuPadre:default:hover:pressed {
+  -fx-background-color: rgba(0, 0, 0, 0.0);
+}
+.botonMenuHijo{
+	-fx-background-color: rgba(0, 0, 0, 0.2);
+	-fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 0,0,0;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER-LEFT;
+}
+.botonMenuHijo:hover{
+	-fx-background-color: rgba(0, 0, 0, 0.1);
+}
+.botonMenuHijo:pressed, .botonMenuHijo:default:hover:pressed {
+  -fx-background-color: rgba(0, 0, 0, 0.0);
+}
+/* fondo del menu contenedor */
+.root{
+    /*-fx-background-color:
+    linear-gradient(#A9BCF5 0%, #A9BCF5 25%, #A9BCF5 75%, #A9BCF5 100%),
+    linear-gradient(#A9BCF5, #A9BCF5),
+    linear-gradient(#A9BCF5 0%, #A9BCF5 20%, #A9BCF5 80%, #A9BCF5 100%);*/
+    -fx-background-image:url('informatica.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 8% 13%;
+    -fx-background-position: right bottom;
+    /*-fx-background-color: #D5D8DC;*/
+	
+}
+/* Diseño para los textFiel de todo el proyecto */
+.textField{
+	-fx-font-family: "Yu Mincho Demibold";
+	-fx-text-overrun: center-word-ellipsis; 
+	-fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(242,242,242) 0.0, rgb(204,255,204) 100.0);
+	-fx-border-color: dodgerblue ;
+}
+.textField:hover{
+	-fx-background-color: #A4A4A4 ;
+}
+/* Diseño del TextField para el inicio de sesion */
+.textFieldUsuario{
+	-fx-text-overrun: center-word-ellipsis; 
+	-fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(242,242,242) 0.0, rgb(204,255,204) 100.0);
+	-fx-border-color: dodgerblue ;
+	-fx-background-image:url('admin.png');
+	-fx-background-repeat: no-repeat;
+  	-fx-background-position: right center;
+}
+.textFieldUsuario:hover{
+	-fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, #6DC4F6 0.0, #959591 90.0);
+}
+.textFieldClave{
+	-fx-text-overrun: center-word-ellipsis; 
+	-fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, rgb(242,242,242) 0.0, rgb(204,255,204) 100.0);
+	-fx-border-color: dodgerblue ;
+	-fx-background-image:url('lock.png');
+	-fx-background-repeat: no-repeat;
+  	-fx-background-position: right center;
+}
+.textFieldClave:hover{
+	-fx-background-color: linear-gradient( from 0.0% 0.0% to 100.0% 100.0%, #6DC4F6 0.0, #959591 90.0);
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Diseño de botones del incio de sesion */
+.botonesInicio {
+    -fx-background-color: #66CCCC;
+    -fx-border-color: #000;
+    -fx-border-radius: 2px; 
+}
+.botonesInicio:hover{	
+	-fx-background-color: #CED8F6;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.botonAceptar:hover{	
+	-fx-background-color: F6F6F6;
+}
+#txtObservacion > .scroll-pane{ 
+	-fx-vbar-policy:always; /* Control the vertical ScrollBar (always,needed,never) */ 
+	-fx-hbar-policy:never; /* Control the horizontal ScrollBar (always,needed,never) */ 
+} 
+
+.labelBanner {
+    -fx-font-family: "Calibri (Cuerpo)";
+    -fx-font-size: 30px;
+}
+.labelBanner2 {
+    -fx-font-family: "Calibri (Cuerpo)";
+    -fx-font-size: 20px;
+    -fx-font-style: italic;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* estilo del inicio de sesion */
+.estiloInicio{
+	 -fx-background-color: rgba(255,255,255,0.6);
+	 -fx-padding: 10;
+	 -fx-effect: dropshadow(three-pass-box, rgba(255,255,255,0.8), 10, 0, 0, 0);
+	 -fx-background-radius: 5;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.labels2 {
+    -fx-font-family: "Monotype Corsiva";
+    -fx-font-size: 34px;
+}
+.labels3 {
+    -fx-font-family: "Calibri (Cuerpo)";
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;  
+}
+.imagenPortada {
+    -fx-background-image: url("logo_centro.png");
+}
+
+.fondbox {
+    -fx-border-color: #000000;
+    -fx-background-color: #3b5998;
+}
+
+.paneles {
+    -fx-border-color: #D00000;
+    -fx-background-color: #FFFFCC;
+    -fx-border-radius: 2px;
+}
+.botonAceptar {
+	-fx-graphic: url("Aceptar.png");
+}
+.botonCobrar {
+	-fx-graphic: url("cobrar.png");
+}
+.botonGrabar {
+	-fx-graphic: url("save.png");
+}
+.botonEliminar {
+	-fx-graphic: url("icono_eliminar.png");
+}
+.botonAnadir {
+	-fx-graphic: url("icono_derecha_one.png");
+}
+.botonAnadirTodo {
+	-fx-graphic: url("icono_derecha_two.png");
+}
+.botonQuitar {
+	-fx-graphic: url("icono_izquierda_one.png");
+}
+.botonQuitarTodo {
+	-fx-graphic: url("icono_izquierda_two.png");
+}
+.botonNuevo {
+	-fx-graphic: url("new.png");
+}
+.botonCancelar {
+	-fx-graphic: url("cancel.png");
+}
+.botonLimpiar {
+	-fx-graphic: url("clear.png");
+}
+.botonAgregar {
+	-fx-graphic: url("agregar.png");
+}
+.botonQuitarR {
+	-fx-graphic: url("quitar.png");
+}
+.botonBuscar {
+	-fx-graphic: url("icono_buscar.png");
+}
+.botonCargar {
+	-fx-graphic: url("preview.png");
+}
+.botonAsignacion {
+	-fx-graphic: url("icono_asignacion.png");
+}
+.botonQuitarAsignacion {
+	-fx-graphic: url("quitar_asignacion.png");
+}
+.botonCierreCiclo {
+	-fx-graphic: url("cierre_ciclo.png");
+}
+.botonEnviarEmail {
+	-fx-graphic: url("enviar_email.png");
+}
+.botonAceptarPago {
+	-fx-graphic: url("aceptar_pago.png");
+}
+.botonImprimir {
+	-fx-graphic: url("imprimir.png");
+}
+.botonResultados {
+	-fx-graphic: url("resultados.png");
+}
+.botonUpload {
+	-fx-graphic: url("upload.png");
+}
+.botonDownload {
+	-fx-graphic: url("download.png");
+}
+.botonCortarAgua {
+	-fx-graphic: url("corte_agua.png");
+}
+.imagenViewInicio{
+	-fx-background-image: url("sesiones.png");
+	-fx-background-size: stretch;
+	-fx-background-repeat: stretch;
+	-fx-alignment: center;
+}
+#border {
+		-fx-border-color: #848484;
+}
+
+#root{
+	-fx-background-image: url("fondo.png");
+	-fx-background-size: stretch;
+	-fx-background-repeat: stretch;
+	-fx-alignment: center;
+}
+#rootP{
+	-fx-background-image: url("fondoP.jpg");
+	-fx-background-size: stretch;
+	-fx-background-repeat: stretch;
+}
+#rootV{
+ 	-fx-background-image: url("fondo.png");
+}
+#rootPortada{
+	
+}
+.Bordes{
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+	-fx-padding: 10;
+	-fx-background-color: firebrick;
+	-fx-background-radius: 5;
+}
+.groupBox{
+	-fx-border-style: solid inside;
+	-fx-border-width: 2;
+	-fx-border-insets: 5;
+	-fx-border-color: #BDBDBD;
+}
